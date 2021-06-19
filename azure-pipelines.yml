@@ -8,10 +8,7 @@ trigger:
 - master
 
 pool:
-  name: 'ubuntu-latest'
-  demands:
-  - Agent.OS -equals Linux
-  - Agent.Name -equals VSTS-02
+  vmImage: 'ubuntu-latest'
 
 variables:
   buildConfiguration: 'Release'
